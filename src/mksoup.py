@@ -87,7 +87,7 @@ def soup_re(urls_list,search_query):
 		pass
 
 	# Creamos la url con la informacion indicada
-	url = "https://api.openweathermap.org/data/2.5/onecall?lat="+resp['lat']+"&lon="+resp['lon']+"&exclude=minutely,hourly,daily&units=metric&appid=5f2132f8b7af90163602c355c6e1476b"
+	url = "https://api.openweathermap.org/data/2.5/onecall?lat="+resp['lat']+"&lon="+resp['lon']+"&exclude=minutely,hourly,daily&units=metric&appid="
 	# Se realiza la peticion
 	res = requests.get(url)
 	# Se obtiene el contenido
